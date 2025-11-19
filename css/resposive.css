@@ -1,35 +1,31 @@
-@media screen and (max-width:1000px){
-    body{
-        background-color: red;
-    }
+@media screen and (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+  }
 
-    nav{
-        flex-direction: column;
-    }
+  .slider {
+    height: 23vh;
+  }
 
-    .slider{
-        height: 23vh;
-    }
-   
-    .logo{
-        justify-content: center;
-        margin: 12px 0;
-    }
+  .logo {
+    justify-content: center;
+    margin: 12px 0;
+  }
 
-    nav ul{
-        justify-content: center;
-        height: 30px;
-    }
+  nav ul {
+    justify-content: center;
+    height: 30px;
+  }
 
-    .search{
-        justify-content: center;
-    }
+  .search {
+    justify-content: center;
+  }
 
-    .search input{
-        margin: 12px ;
-    }
+  .search input {
+    margin: 12px;
+  }
 
-    .item-img{ 
-        width: 140px;
-    }
+  .item-img {
+    width: 140px;
+  }
 }
