@@ -6,6 +6,7 @@
     <title>Flipkart Clone</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/resposive.css" />
   </head>
   <body>
     <header>
@@ -19,14 +20,602 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="search">
-            <input type="text">
-            <button class="btn">search</button>
+          <input type="text" placeholder="Search Here" />
+          <button class="btn">search</button>
         </div>
       </nav>
     </header>
 
     <main>
-      <div class="container"></div>
+      <div class="container">
+        <div class="slider">
+          <img src="img/image1.jpg" alt="" />
+        </div>
+        <!-- Cricket Category -->
+        <div class="card">
+           
+          <h2 class="my-2">Join the fun of cricket</h2>
+          <div class="cards">
+            <div class="card-items">
+              <img
+                class="item-img"
+                src="https://plus.unsplash.com/premium_photo-1677261482541-b9a5e0f618f0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <div class="lines">
+                <p class="text-center my-1">Cricket Balls</p>
+                <p class="text-center my-1">Min 20% off</p>
+                <p class="text-center my-1">Grab Now!</p>
+              </div>
+            </div>
+
+            <div class="card-items">
+              <img
+                class="item-img"
+                src="https://plus.unsplash.com/premium_photo-1679690884082-eaba9eccdcb5?q=80&w=784&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <div class="lines">
+                <p class="text-center my-1">Cricket Bat</p>
+                <p class="text-center my-1">Min 20% off</p>
+                <p class="text-center my-1">Grab Now!</p>
+              </div>
+            </div>
+
+            <div class="card-items">
+              <img
+                class="item-img"
+                src="https://images.unsplash.com/photo-1624897174291-1bd715e371d5?q=80&w=536&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <div class="lines">
+                <p class="text-center my-1">Cricket Wicket Poles</p>
+                <p class="text-center my-1">Min 20% off</p>
+                <p class="text-center my-1">Grab Now!</p>
+              </div>
+            </div>
+
+            <div class="card-items">
+              <img
+                class="item-img"
+                src="https://plus.unsplash.com/premium_photo-1679917424562-c0647ab694d1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <div class="lines">
+                <p class="text-center my-1">Combo</p>
+                <p class="text-center my-1">Min 20% off</p>
+                <p class="text-center my-1">Grab Now!</p>
+              </div>
+            </div>
+
+            <div class="card-items">
+              <img
+                class="item-img"
+                src="data:image/jpeg;base64,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"
+                alt=""
+              />
+              <div class="lines">
+                <p class="text-center my-1">Cricket Gloves</p>
+                <p class="text-center my-1">Min 20% off</p>
+                <p class="text-center my-1">Grab Now!</p>
+              </div>
+            </div>
+
+            <div class="card-items">
+              <img
+                class="item-img"
+                src="data:image/jpeg;base64,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"
+                alt=""
+              />
+              <div class="lines">
+                <p class="text-center my-1">Cricket Pads</p>
+                <p class="text-center my-1">Min 20% off</p>
+                <p class="text-center my-1">Grab Now!</p>
+              </div>
+            </div>
+
+            <div class="card-items">
+              <img
+                class="item-img"
+                src="data:image/jpeg;base64,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"
+                alt=""
+              />
+              <div class="lines">
+                <p class="text-center my-1">Cricket Helmet</p>
+                <p class="text-center my-1">Min 20% off</p>
+                <p class="text-center my-1">Grab Now!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+<!-- Football Category -->
+<div class="card">
+  <h2 class="my-2">Gear up for football</h2>
+  <div class="cards">
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Football</p>
+        <p class="text-center my-1">Min 25% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Football Boots</p>
+        <p class="text-center my-1">Min 25% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Goalkeeper Gloves</p>
+        <p class="text-center my-1">Min 25% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1551958219-acbc608c6377?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Football Jersey</p>
+        <p class="text-center my-1">Min 25% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Shin Guards</p>
+        <p class="text-center my-1">Min 25% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=1178&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Training Cones</p>
+        <p class="text-center my-1">Min 25% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1589487391730-58f20eb2c308?q=80&w=1178&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Football Goal Net</p>
+        <p class="text-center my-1">Min 25% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Basketball Category -->
+<div class="card">
+  <h2 class="my-2">Slam dunk with basketball</h2>
+  <div class="cards">
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1190&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Basketball</p>
+        <p class="text-center my-1">Min 30% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Basketball Shoes</p>
+        <p class="text-center my-1">Min 30% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1515523110800-9415d13b84a8?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Basketball Hoop</p>
+        <p class="text-center my-1">Min 30% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Basketball Jersey</p>
+        <p class="text-center my-1">Min 30% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Basketball Backpack</p>
+        <p class="text-center my-1">Min 30% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://game-patch.com/cdn/shop/products/IMG_1599_2048x.jpg?v=1756756730"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Knee Pads</p>
+        <p class="text-center my-1">Min 30% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Basketball Pump</p>
+        <p class="text-center my-1">Min 30% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tennis Category -->
+<div class="card">
+  <h2 class="my-2">Ace your game with tennis</h2>
+  <div class="cards">
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Tennis Racket</p>
+        <p class="text-center my-1">Min 35% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Tennis Balls</p>
+        <p class="text-center my-1">Min 35% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Tennis Shoes</p>
+        <p class="text-center my-1">Min 35% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?q=80&w=1283&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Tennis Bag</p>
+        <p class="text-center my-1">Min 35% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1630698098611-1a515ec7c0a3?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Tennis Net</p>
+        <p class="text-center my-1">Min 35% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=1307&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Wristbands</p>
+        <p class="text-center my-1">Min 35% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Tennis Cap</p>
+        <p class="text-center my-1">Min 35% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Badminton Category -->
+<div class="card">
+  <h2 class="my-2">Smash it with badminton</h2>
+  <div class="cards">
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Badminton Racket</p>
+        <p class="text-center my-1">Min 28% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1594623274890-6b45ce7cf44a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Shuttlecocks</p>
+        <p class="text-center my-1">Min 28% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Badminton Shoes</p>
+        <p class="text-center my-1">Min 28% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1613916412364-9ebad036e6ae?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Badminton Net</p>
+        <p class="text-center my-1">Min 28% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Grip Tape</p>
+        <p class="text-center my-1">Min 28% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1553896394-49ce6f1eae06?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Badminton Bag</p>
+        <p class="text-center my-1">Min 28% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1606938755198-f95d5e04adf6?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Sports Apparel</p>
+        <p class="text-center my-1">Min 28% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fitness & Gym Category -->
+<div class="card">
+  <h2 class="my-2">Get fit with gym essentials</h2>
+  <div class="cards">
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Dumbbells</p>
+        <p class="text-center my-1">Min 40% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?q=80&w=1125&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Yoga Mat</p>
+        <p class="text-center my-1">Min 40% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1598289431512-b97b0917affc?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Resistance Bands</p>
+        <p class="text-center my-1">Min 40% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Gym Gloves</p>
+        <p class="text-center my-1">Min 40% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Protein Shaker</p>
+        <p class="text-center my-1">Min 40% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1584380931214-dbb5b72e7fd0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Gym Bag</p>
+        <p class="text-center my-1">Min 40% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+
+    <div class="card-items">
+      <img
+        class="item-img"
+        src="https://images.unsplash.com/photo-1434682881908-b43d0467b798?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+      <div class="lines">
+        <p class="text-center my-1">Jump Rope</p>
+        <p class="text-center my-1">Min 40% off</p>
+        <p class="text-center my-1">Grab Now!</p>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
     </main>
 
     <footer class="flex-all-center">

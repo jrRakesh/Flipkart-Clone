@@ -21,7 +21,6 @@ nav {
   align-items: center;
 }
 .logo img {
-  width: 88px;
   padding: 0 25px;
 }
 nav ul {
@@ -41,22 +40,56 @@ nav ul li a {
 nav ul li a:hover {
   font-weight: bold;
 }
-.container {
-  min-height: calc(100vh - 55px - 12vh);
-}
+
 .search {
   display: flex;
   align-items: center;
 }
 .search input{
-    width: 490px;
+    width: 30vw;
     height: 28px;
     border-radius: 3px;
     margin: 0 20px 0 56px;
+    padding: 0 12px;
 }
-.btn{
-    
+.search button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
 }
+.slider{
+  /* display: flex;
+  justify-content: center; */
+  margin: 12px auto;
+  width: 80vw;
+  overflow: hidden;
+}
+.slider img{
+  height: 400px;
+  width: 100%;
+}
+
+.card{
+  max-width: 91vw;
+  margin: 37px auto;
+} 
+.cards{
+  display: flex;
+  overflow: hidden;
+
+}
+
+.card-items{
+  width: 10vw;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 23px;
+}
+
+.container {
+  min-height: calc(100vh - 55px - 12vh);
+}
+
 footer {
   height: 12vh;
   background-color: var(--main-bg-color);
